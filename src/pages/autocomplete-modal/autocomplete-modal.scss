@@ -1,0 +1,121 @@
+page-autocomplete-modal {
+  .noPad .label{
+    margin: 0;
+  }
+
+  .noPad  .item-inner {
+    padding-right: 0 !important;
+  }
+
+  .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+    border-bottom: 1px solid #06847d;
+    box-shadow: inset 0 -1px 0 0 #06847d;
+  }
+
+  .item-md.item-input.ng-touched.input-has-focus .item-innner .label {
+    border-bottom: 1px solid #53847f !important;
+    color: #06847d;
+    box-shadow: inset 0 -1px 0 0 #53847f !important;
+  }
+
+  .searchbar-ios .searchbar-input {
+    color: #06847d;
+  }
+
+  .searchbar-md .searchbar-input {
+    color: #06847d;
+  }
+
+  .content-ios {
+    background-color: #F5F5F5;
+  }
+
+  .content-md {
+    background-color: #F5F5F5;
+  }
+
+  .item-md {
+    box-shadow: 0 2px 15px rgba(100, 100, 100, 0.1), 0 2px 5px rgba(100, 100, 100, 0.2);
+    margin-bottom: 3px;
+  }
+
+  .item-ios {
+    box-shadow: 0 2px 15px rgba(100, 100, 100, 0.1), 0 2px 5px rgba(100, 100, 100, 0.2);
+    margin-bottom: 3px;
+  }
+
+  .input-item {
+    margin-bottom: 3px;
+  }
+
+  .searchbar-ios {
+    background: none;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: none;
+  }
+
+  .list-header-ios {
+    text-transform: none;
+  }
+
+  .label-ios {
+    font-size: 16px !important;
+    color: #06847d;
+
+  }
+  .label-md {
+    font-size: 16px !important;
+    color: #06847d;
+  }
+
+  .item-divider-ios {
+    background-color: #11C1F3 !important;
+    color: white !important;
+    margin-top: 10px;
+  }
+
+  .item-divider-ios .label-ios {
+    color: white !important;
+  }
+
+  .item-divider-md {
+    background-color: #11C1F3 !important;
+    color: white !important;
+    margin-top: 10px;
+  }
+
+  .item-divider-md .label-md {
+    //background-color: #ff2559 !important;
+    color: white !important;
+    margin-top: 10px;
+  }
+
+  .list-md > .item-block:first-child {
+    border-top: none;
+  }
+
+
+
+  .list-ios[no-lines] .item {
+    margin-bottom: 3px;
+  }
+
+  .list-md[no-lines] .item {
+    margin-bottom: 3px;
+  }
+
+  .divider {
+    margin-bottom: 10px !important;
+  }
+
+  .list-ios .item-block .item-inner {
+    border-bottom: none;
+  }
+
+  .list-md .item-block .item-inner {
+    border-bottom: none;
+  }
+
+}

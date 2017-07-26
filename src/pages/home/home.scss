@@ -1,0 +1,19 @@
+page-home {
+  agm-map {
+    height: 300px;
+    opacity: 0;
+    transition: opacity 500ms ease-in
+  }
+
+  .searchbar-ios {
+    background: none;
+  }
+
+  .noButton {
+    min-width: 30% !important;
+    color: white !important;
+    margin: 10px !important;
+    background-color: red !important;
+    font-weight: normal !important;
+  }
+}

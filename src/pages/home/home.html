@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="login-green">
+    <ion-title>
+      Gmaps Autocomplete
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list no-lines>
+   <ion-item no-lines (click)="showModal()">
+     <ion-searchbar tappable color="primary" id="autocomplete" type="text" name="title" #searchbar [(ngModel)]="userAddress" placeholder="Please enter address..."></ion-searchbar>
+   </ion-item>
+   <ion-item no-lines>
+     <agm-map [streetViewControl]="false" [disableDefaultUI]="true" [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" [styles]="styles">
+       <agm-marker [iconUrl]="{
+    url: './assets/icon/blue-pin.png',
+    size: {width: 35, height: 53},
+    scaledSize: {width: 35, height: 53 }
+    }" [latitude]="latitude" [longitude]="longitude"></agm-marker>
+     </agm-map>
+   </ion-item>
+   <ion-label *ngIf="addressDetails">Output: </ion-label>
+   <ion-item text-wrap *ngIf="addressDetails">
+     <pre >{{ addressDetails | json }}</pre>
+   </ion-item>
+ </ion-list>
+</ion-content>s
